@@ -1,13 +1,13 @@
 Promise.race([
 	new Promise(function(resolve, reject) {
 		setTimeout(function() {
-			console.log("never reached in second 2");
+			console.log("out of time in second 2");
 			resolve();
 		}, 2000);
 	}),
 	new Promise(function(resolve, reject) {
 		setTimeout(function() {
-			console.log("never reached in second 3");
+			console.log("out of time in second 3");
 			resolve();
 		}, 3000);
 	}),
